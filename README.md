@@ -1,14 +1,15 @@
 ## Using `create-react-app` with React Router + Express.js
 
-See : https://medium.com/@patriciolpezjuri/using-create-react-app-with-react-router-express-js-8fa658bf892d
+Following the React CommentBox tutorial:
+https://facebook.github.io/react/docs/tutorial.html
 
 ## Development
 
 Clone this repository:
 
 ```sh
-git clone https://github.com/bmontalvo/routed-react.git
-cd routed-react
+git clone https://github.com/bmontalvo/react-tutorial.git
+cd react-tutorial
 ```
 
 Install dependencies:
@@ -27,16 +28,16 @@ npm start
 
 Be sure to install Docker and start a Docker-machine if necessary.
 
-Let's create an image named `routed-react`:
+Let's create an image named `react-tutorial`:
 
 ```sh
-docker build -t routed-react .
+docker build -t react-tutorial .
 ```
 
-Finally, start a container named `routed-react-instance` at port `80`.
+Finally, start a container named `react-tutorial-instance` at port `80`.
 
 ```sh
-docker run -p 80:9000 --name routed-react-instance routed-react
+docker run -p 80:9000 --name react-tutorial-instance react-tutorial
 ```
 
 ## Testing
